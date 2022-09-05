@@ -1,0 +1,24 @@
+/* Código para calcular o alcance do lançamento onliquo*/
+
+#include <stdio.h>
+#include <stdlib.h> /* biblioteca definida no windows*/
+#include <math.h>
+#define g 9.8
+#define PI 3.141592
+
+
+int main ()
+{
+	double Vo=15.0,A,te,teg;
+	printf("Insira o valor do angulo de lancamento em GRAUS: \n");
+	
+	scanf("%lf",&teg); 
+
+    te= (PI/180)*teg;
+    
+    A= ((Vo*Vo)*sin(2*te))/g;
+
+	printf("Assim, o angulo de lancamento %5.2f implica no alcance %5.3f",teg,A);
+return(0);
+	
+}
