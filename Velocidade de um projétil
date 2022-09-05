@@ -1,0 +1,40 @@
+/* Peograma para calcular a dist�ncia de um objeto em movimento uniformente variado
+v=v0+a*t
+X=X0+v8t+0.5a*t**2
+prog: Pedro Lucas
+Data: 30/08/2022 */
+
+/* Diretivas do pre-compilador */
+
+#include <stdio.h>
+#include <stdlib.h> /* biblioteca definida no windows*/
+#include <math.h>
+
+
+
+int main ()
+
+{
+	float v,x,Vo,a,t,xo=0.;
+	
+	printf("Entre com a velocidade inicial (km/h): \n ");
+	
+	scanf("%f",&Vo);
+	
+	printf("Qual seria a aceleracao (km/h**2):\n ");
+	
+	scanf("%f",&a);
+	
+	printf("Insira o intervalo de tempo em horas:\n ");
+	
+	scanf("%f",&t);
+	
+	v=Vo+a*t;
+	
+	x=xo+Vo*t+0.5*a*pow(t,2.);
+	
+	printf("Em t=%5.2f horas a velocidade do objeto e v=%3.2f e \\ a posicao e =%3.2f",t,v,x);
+	
+  return (0);
+	
+}
